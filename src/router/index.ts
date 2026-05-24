@@ -1,8 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from '../HomePage.vue'
+import EchauffementPage from '@/echauffement/EchauffementPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: [
+    { path: '/', name: 'home', component: HomePage },
+    { path: '/echauffement', name: 'echauffement', component: EchauffementPage },
+  ],
 })
 
 export default router

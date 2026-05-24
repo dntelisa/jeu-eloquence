@@ -1,8 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="echauffement-card">
+  <div class="echauffement-card" @click="$router.push('/echauffement')">
     <h1>Echauffement</h1>
     <img src="../assets/images/echauffement.png" alt="Echauffement" />
     <p>Echauffe toi en répettant des phrases le plus rapidement possible.</p>
@@ -26,7 +25,5 @@
     height: 100px;
     margin-bottom: 20px;
   }
-
 }
-
 </style>

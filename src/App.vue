@@ -1,11 +1,8 @@
-<script setup lang="ts">
-import EchauffementCard from './echauffement/EchauffementCard.vue';
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <h1>PALABRUME</h1>
-  <EchauffementCard />
+  <h1 @click="$router.push('/')">PALABRUME</h1>
+  <router-view />
 </template>
 
 <style scoped>
@@ -21,8 +18,9 @@ h1 {
 </style>
 
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 </style>

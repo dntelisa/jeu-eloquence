@@ -24,7 +24,6 @@ const titleTraducteur = 'Le Traducteur'
 
 const descriptionJouteVerbale = 'Affronte un adversaire sur un thème donné'
 const titleJouteVerbale = 'Joute Verbale'
-
 </script>
 
 <template>
@@ -44,11 +43,7 @@ const titleJouteVerbale = 'Joute Verbale'
       :imgSrc="imgPhraseCourte"
       :description="descriptionPhraseCourte"
     />
-    <BaseCard
-      :title="titlePivot"
-      :imgSrc="imgPivot"
-      :description="descriptionPivot"
-    />
+    <BaseCard :title="titlePivot" :imgSrc="imgPivot" :description="descriptionPivot" />
     <BaseCard
       :title="titleTraducteur"
       :imgSrc="imgTraducteur"
@@ -67,5 +62,4 @@ const titleJouteVerbale = 'Joute Verbale'
   display: flex;
   flex-wrap: wrap;
 }
-
 </style>

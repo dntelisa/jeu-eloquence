@@ -14,18 +14,17 @@ const startGame = () => {
   jeuLance.value = true
   randomPhrase()
 }
-
 </script>
 
 <template>
   <div class="echauffement-page">
-
     <!-- ECRAN 1 : Les consignes (S'affiche si jeuLance est faux) -->
     <div v-if="!jeuLance" class="ecran-consignes">
       <h1>Échauffement</h1>
       <p>
-        Place un stylo (propre !) entre tes dents, à l'horizontale. <br>
-        Le but est de prononcer les phrases qui vont s'afficher de la manière la plus distincte possible.
+        Place un stylo (propre !) entre tes dents, à l'horizontale. <br />
+        Le but est de prononcer les phrases qui vont s'afficher de la manière la plus distincte
+        possible.
       </p>
       <button @click="startGame">Lancer l'échauffement</button>
     </div>
@@ -35,7 +34,6 @@ const startGame = () => {
       <p class="phrase-texte">{{ phraseActuelle }}</p>
       <button @click="randomPhrase">Phrase Suivante</button>
     </div>
-
   </div>
 </template>
 

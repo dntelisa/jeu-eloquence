@@ -1,15 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  title: string
+  imgSrc: string
+  description: string
+}>()
+</script>
 
 <template>
-  <div class="echauffement-card" @click="$router.push('/echauffement')">
-    <h1>Echauffement</h1>
-    <img src="../assets/images/echauffement.png" alt="Echauffement" />
-    <p>Echauffe toi en répettant des phrases le plus rapidement possible.</p>
+  <div class="card" @click="$router.push('/' + title.toLowerCase().replace(' ', '-'))">
+    <h1>{{ title }}</h1>
+    <img :src="imgSrc" :alt="title" />
+    <p>{{ description }}</p>
   </div>
 </template>
 
 <style scoped>
-.echauffement-card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
